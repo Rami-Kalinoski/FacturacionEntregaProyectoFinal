@@ -44,7 +44,7 @@ public class VentaService {
             Venta nuevaVenta = construirVenta(venta);
             return fabricarVentaDTO(ventaRepo.save(nuevaVenta));
         } else {
-            return new VentaDTO();
+            return null;
         }
     }
 
@@ -171,7 +171,7 @@ public class VentaService {
         nuevoRegistroDV.setProducto(productoAux);
         nuevoRegistroDV.setNombreProducto(productoAux.getNombre());
         nuevoRegistroDV.setColorProducto(productoAux.getColor());
-        nuevoRegistroDV.setCantidadProducto(nuevoRegistroDV.getCantidadProducto());
+        nuevoRegistroDV.setCantidadProducto(detalleVenta.getCantidadProducto());
         nuevoRegistroDV.setPrecioProducto(productoAux.getPrecio());
         return nuevoRegistroDV;
     }

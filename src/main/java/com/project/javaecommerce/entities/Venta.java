@@ -1,5 +1,6 @@
 package com.project.javaecommerce.entities;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,11 +24,15 @@ public class Venta implements Serializable {
     // PROPIEDADES ---------------------------------------------------------------------------------
     @Id
     @GeneratedValue (strategy= GenerationType.IDENTITY)
+    @Schema(description="ID de la venta autogestionado por la base de datos", requiredMode=Schema.RequiredMode.AUTO, example="1")
     private Long id;
     @Temporal(TemporalType.TIMESTAMP)
+    @Schema (description="Fecha en que se realizó la venta", requiredMode=Schema.RequiredMode.AUTO)
     private Date fecha;
     @Column
+    @Schema (description="Monto final total de la venta", requiredMode=Schema.RequiredMode.AUTO, example="100000.00")
     private Float total;
+
     // CLIENTE
     @ManyToOne
     @JoinColumn (name="id_cliente")
