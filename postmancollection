@@ -1,0 +1,636 @@
+{
+	"info": {
+		"_postman_id": "dfd2b726-2efc-4a67-ba23-39b567adbb65",
+		"name": "Java Ecommerce Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32620100"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "crear cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": 40222333,\r\n    \"nombre\": \"Pedro\",\r\n    \"apellido\": \"Sanchez\",\r\n    \"email\": \"pepesanchez@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": 40555777,\r\n    \"nombre\": \"Carlos\",\r\n    \"apellido\": \"Rodriguez\",\r\n    \"email\": \"charlyro@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": 40111222,\r\n    \"nombre\": \"Alexis\",\r\n    \"apellido\": \"MacAllister\",\r\n    \"email\": \"alemacallister@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": 40999888,\r\n    \"nombre\": \"Lionel\",\r\n    \"apellido\": \"Scaloni\",\r\n    \"email\": \"lioscaloni@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/modificar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"modificar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar todos los clientes",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/eliminar/todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"eliminar",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "crear producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Remera Boxy-Fit Phanterz Scar\",\r\n    \"color\": \"blanco\",\r\n    \"stock\": 150,\r\n    \"precio\": 7500.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/productos/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Remera Sin Mangas Snake Venom\",\r\n    \"color\": \"verde\",\r\n    \"stock\": 200,\r\n    \"precio\": 8000.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/productos/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Buzo Oversize The Hunter\",\r\n    \"color\": \"negro\",\r\n    \"stock\": 50,\r\n    \"precio\": 12000.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/productos/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/productos/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/productos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Remera Boxy-Fit Phanterz Scar\",\r\n    \"color\": \"blanco\",\r\n    \"stock\": 75,\r\n    \"precio\": 15000.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/productos/modificar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"modificar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/productos/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar todos los productos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/productos/eliminar/todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"productos",
+								"eliminar",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ventas",
+			"item": [
+				{
+					"name": "crear venta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": { \"id\": 1 },\r\n    \"detallesVenta\": [\r\n        {\r\n            \"cantidad\": 1,\r\n            \"producto\": { \"id\": 1 }\r\n        },\r\n        {\r\n            \"cantidad\": 5,\r\n            \"producto\": { \"id\": 2 }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/ventas/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ventas",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear venta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": { \"id\": 2 },\r\n    \"detallesVenta\": [\r\n        {\r\n            \"cantidad\": 10,\r\n            \"producto\": { \"id\": 1 }\r\n        },\r\n        {\r\n            \"cantidad\": 50,\r\n            \"producto\": { \"id\": 2 }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear venta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": { \"id\": 3 },\r\n    \"detallesVenta\": [\r\n        {\r\n            \"cantidad\": 1,\r\n            \"producto\": { \"id\": 1 }\r\n        },\r\n        {\r\n            \"cantidad\": 5,\r\n            \"producto\": { \"id\": 2 }\r\n        },\r\n        {\r\n            \"cantidad\": 20,\r\n            \"producto\": { \"id\": 3 }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/ventas/crear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ventas",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar ventas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/ventas/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ventas",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener venta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/ventas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ventas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modificar venta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cliente\": { \"id\": 1 },\r\n    \"detallesVenta\": [\r\n        {\r\n            \"cantidad\": 1,\r\n            \"producto\": { \"id\": 1 }\r\n        },\r\n        {\r\n            \"cantidad\": 90,\r\n            \"producto\": { \"id\": 2 }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/ventas/modificar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ventas",
+								"modificar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar venta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/ventas/eliminar/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ventas",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar todas las ventas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/ventas/eliminar/todas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ventas",
+								"eliminar",
+								"todas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
